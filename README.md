@@ -1,7 +1,16 @@
 # Airline
 Console application "Airline" 
 
-#Instructions for launching 
+# Requirements
+JDK 1.8 or higher
+
+# Instructions for launching 
+
+1. Installing JDK
+2. Run project from Main.java class 
+3. Use commands represented below
+
+Also you can build project using maven
 
 # Commands description
 - __dcc__ - Display total carrying capacity of the all aircrafts of the company
