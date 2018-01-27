@@ -28,6 +28,9 @@ public class AirlineCompany implements CompanyInterface {
         return totalCapacity;
     }
 
+    /*
+     *  @return total carrying capacity of all aircrafts;
+     */
     public int getTotalCarryingCapacity(){
         int totalCarryingCapacity = 0;
 

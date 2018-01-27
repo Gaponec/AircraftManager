@@ -1,4 +1,7 @@
+package com.airlines;
+
 import com.airlines.entity.AirlineCompany;
+import com.airlines.hanlder.CommandHandler;
 import com.airlines.model.CargoAirplane;
 import com.airlines.model.CargoHelicopter;
 import com.airlines.model.PassengerAirplane;
@@ -18,10 +21,13 @@ public class Main {
         company.addAircraft(new CargoHelicopter("Carro",1200,50));
         company.addAircraft(new CargoAirplane("Pedro",500,100));
 
-        company.sort();
+        CommandHandler commandHandler = new CommandHandler(company);
 
-        while (true){
+        String command;
 
+        while (!commandHandler.shouldExit()){
+            command = scanner.nextLine();
+            commandHandler.handleCommand(command);
         }
     }
 }
